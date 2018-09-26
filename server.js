@@ -53,11 +53,12 @@ app.post( '/updateNote/:note', function( req, res ) {
     // Przypisz obiekt przechowujacy zapytanie o endpoint do zmiennej
     stringyFile = req.params.note;
     // Wywolaj metode ktora zapisze pobrane dane z endpointa do pliku json
-    fs.writeFile( './test.json', stringyFile, function( err ) {
+    fs.appendFile( './test.json', stringyFile, function( err ) {
         // Jesli plik nie zostal znaleziony, wyswietl blad w Node
         if( err ) throw err;
+        res.send( stringyFile );
         // Powiadom serwer ze plik zostal pomyslnie zaktualizowany
-        console.log( 'file updated' );
+        console.log( 'file updated.' );
     });
 });
 
