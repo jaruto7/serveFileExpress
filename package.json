@@ -1,0 +1,30 @@
+{
+  "name": "jsoncrudop",
+  "version": "1.0.0",
+  "description": "my first crud operation on files",
+  "main": "index.js",
+  "scripts": {
+    "test": "crud, json, operation"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jaruto7/JsonCrudOp.git"
+  },
+  "keywords": [
+    "crud",
+    "json",
+    "files",
+    "operation"
+  ],
+  "author": "Jarek Kajko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaruto7/JsonCrudOp/issues"
+  },
+  "homepage": "https://github.com/jaruto7/JsonCrudOp#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.16.3",
+    "parser": "^0.1.4"
+  }
+}
