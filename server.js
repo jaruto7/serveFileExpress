@@ -4,7 +4,7 @@ var express = require( 'express' );
 var bodyParser = require( 'body-parser' );
 var app = express();
 var stringyFile;
-// Uzyj metody aby zaczac serwowac pliki w danym katalogu
+// Uzyj metody aby zaczac serwowac pliki w danym katalogu.
 app.use( express.static( 'assets' ) );
 // Wywolaj metode GET  
 app.get( '/', function( req, res ) {
